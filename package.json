@@ -1,0 +1,27 @@
+{
+  "name": "advent-of-code-2024",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "dev": "bun --watch test",
+    "start": "bun src/index.ts run",
+    "fix": "biome check --write .",
+    "ci": "tsc && biome ci . && bun test",
+    "new": "bun src/index.ts new"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "endent": "^2.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@tsconfig/bun": "^1.0.7",
+    "@types/bun": "^1.1.14",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
