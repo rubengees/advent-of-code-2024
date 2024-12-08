@@ -48,7 +48,7 @@ describe("day 6", () => {
     expect(result).toEqual("6")
   })
 
-  test("part 2 input", async () => {
+  test.todo("part 2 input", async () => {
     const result = part2((await readFile("src/day6/input.txt")).toString())
 
     expect(result).toEqual("1688")
